@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42FAC89016A72C3E002ED5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC88F16A72C3D002ED5DC /* UIKit.framework */; };
+		42FAC89216A72C3E002ED5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC89116A72C3E002ED5DC /* Foundation.framework */; };
+		42FAC89416A72C3E002ED5DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC89316A72C3E002ED5DC /* CoreGraphics.framework */; };
+		42FAC89A16A72C3E002ED5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC89816A72C3E002ED5DC /* InfoPlist.strings */; };
+		42FAC89C16A72C3E002ED5DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC89B16A72C3E002ED5DC /* main.m */; };
+		42FAC8A016A72C3E002ED5DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC89F16A72C3E002ED5DC /* AppDelegate.m */; };
+		42FAC8A216A72C3E002ED5DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A116A72C3E002ED5DC /* Default.png */; };
+		42FAC8A416A72C3E002ED5DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A316A72C3E002ED5DC /* Default@2x.png */; };
+		42FAC8A616A72C3E002ED5DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */; };
+		42FAC8A916A72C3E002ED5DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */; };
+		42FAC8AC16A72C3E002ED5DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8AB16A72C3E002ED5DC /* ViewController.m */; };
+		42FAC8B416A72C3E002ED5DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC8B316A72C3E002ED5DC /* SenTestingKit.framework */; };
+		42FAC8B516A72C3E002ED5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC88F16A72C3D002ED5DC /* UIKit.framework */; };
+		42FAC8B616A72C3E002ED5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC89116A72C3E002ED5DC /* Foundation.framework */; };
+		42FAC8BE16A72C3E002ED5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8BC16A72C3E002ED5DC /* InfoPlist.strings */; };
+		42FAC8C116A72C3E002ED5DC /* iswingmobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8C016A72C3E002ED5DC /* iswingmobileTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42FAC8B716A72C3E002ED5DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42FAC88216A72C3D002ED5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42FAC88A16A72C3D002ED5DC;
+			remoteInfo = iswingmobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42FAC88B16A72C3D002ED5DC /* iswingmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iswingmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FAC88F16A72C3D002ED5DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42FAC89116A72C3E002ED5DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42FAC89316A72C3E002ED5DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42FAC89716A72C3E002ED5DC /* iswingmobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iswingmobile-Info.plist"; sourceTree = "<group>"; };
+		42FAC89916A72C3E002ED5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42FAC89B16A72C3E002ED5DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42FAC89D16A72C3E002ED5DC /* iswingmobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iswingmobile-Prefix.pch"; sourceTree = "<group>"; };
+		42FAC89E16A72C3E002ED5DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42FAC89F16A72C3E002ED5DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42FAC8A116A72C3E002ED5DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		42FAC8A316A72C3E002ED5DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		42FAC8A816A72C3E002ED5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		42FAC8AA16A72C3E002ED5DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		42FAC8AB16A72C3E002ED5DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42FAC8B216A72C3E002ED5DC /* iswingmobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iswingmobileTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FAC8B316A72C3E002ED5DC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		42FAC8BB16A72C3E002ED5DC /* iswingmobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iswingmobileTests-Info.plist"; sourceTree = "<group>"; };
+		42FAC8BD16A72C3E002ED5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42FAC8BF16A72C3E002ED5DC /* iswingmobileTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iswingmobileTests.h; sourceTree = "<group>"; };
+		42FAC8C016A72C3E002ED5DC /* iswingmobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iswingmobileTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42FAC88816A72C3D002ED5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAC89016A72C3E002ED5DC /* UIKit.framework in Frameworks */,
+				42FAC89216A72C3E002ED5DC /* Foundation.framework in Frameworks */,
+				42FAC89416A72C3E002ED5DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FAC8AE16A72C3E002ED5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAC8B416A72C3E002ED5DC /* SenTestingKit.framework in Frameworks */,
+				42FAC8B516A72C3E002ED5DC /* UIKit.framework in Frameworks */,
+				42FAC8B616A72C3E002ED5DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42FAC88016A72C3D002ED5DC = {
+			isa = PBXGroup;
+			children = (
+				42FAC89516A72C3E002ED5DC /* iswingmobile */,
+				42FAC8B916A72C3E002ED5DC /* iswingmobileTests */,
+				42FAC88E16A72C3D002ED5DC /* Frameworks */,
+				42FAC88C16A72C3D002ED5DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42FAC88C16A72C3D002ED5DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42FAC88B16A72C3D002ED5DC /* iswingmobile.app */,
+				42FAC8B216A72C3E002ED5DC /* iswingmobileTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42FAC88E16A72C3D002ED5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42FAC88F16A72C3D002ED5DC /* UIKit.framework */,
+				42FAC89116A72C3E002ED5DC /* Foundation.framework */,
+				42FAC89316A72C3E002ED5DC /* CoreGraphics.framework */,
+				42FAC8B316A72C3E002ED5DC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42FAC89516A72C3E002ED5DC /* iswingmobile */ = {
+			isa = PBXGroup;
+			children = (
+				42FAC89E16A72C3E002ED5DC /* AppDelegate.h */,
+				42FAC89F16A72C3E002ED5DC /* AppDelegate.m */,
+				42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */,
+				42FAC8AA16A72C3E002ED5DC /* ViewController.h */,
+				42FAC8AB16A72C3E002ED5DC /* ViewController.m */,
+				42FAC89616A72C3E002ED5DC /* Supporting Files */,
+			);
+			path = iswingmobile;
+			sourceTree = "<group>";
+		};
+		42FAC89616A72C3E002ED5DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FAC89716A72C3E002ED5DC /* iswingmobile-Info.plist */,
+				42FAC89816A72C3E002ED5DC /* InfoPlist.strings */,
+				42FAC89B16A72C3E002ED5DC /* main.m */,
+				42FAC89D16A72C3E002ED5DC /* iswingmobile-Prefix.pch */,
+				42FAC8A116A72C3E002ED5DC /* Default.png */,
+				42FAC8A316A72C3E002ED5DC /* Default@2x.png */,
+				42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42FAC8B916A72C3E002ED5DC /* iswingmobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FAC8BF16A72C3E002ED5DC /* iswingmobileTests.h */,
+				42FAC8C016A72C3E002ED5DC /* iswingmobileTests.m */,
+				42FAC8BA16A72C3E002ED5DC /* Supporting Files */,
+			);
+			path = iswingmobileTests;
+			sourceTree = "<group>";
+		};
+		42FAC8BA16A72C3E002ED5DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FAC8BB16A72C3E002ED5DC /* iswingmobileTests-Info.plist */,
+				42FAC8BC16A72C3E002ED5DC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42FAC88A16A72C3D002ED5DC /* iswingmobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FAC8C416A72C3E002ED5DC /* Build configuration list for PBXNativeTarget "iswingmobile" */;
+			buildPhases = (
+				42FAC88716A72C3D002ED5DC /* Sources */,
+				42FAC88816A72C3D002ED5DC /* Frameworks */,
+				42FAC88916A72C3D002ED5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iswingmobile;
+			productName = iswingmobile;
+			productReference = 42FAC88B16A72C3D002ED5DC /* iswingmobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42FAC8B116A72C3E002ED5DC /* iswingmobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FAC8C716A72C3E002ED5DC /* Build configuration list for PBXNativeTarget "iswingmobileTests" */;
+			buildPhases = (
+				42FAC8AD16A72C3E002ED5DC /* Sources */,
+				42FAC8AE16A72C3E002ED5DC /* Frameworks */,
+				42FAC8AF16A72C3E002ED5DC /* Resources */,
+				42FAC8B016A72C3E002ED5DC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42FAC8B816A72C3E002ED5DC /* PBXTargetDependency */,
+			);
+			name = iswingmobileTests;
+			productName = iswingmobileTests;
+			productReference = 42FAC8B216A72C3E002ED5DC /* iswingmobileTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42FAC88216A72C3D002ED5DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = DashBoardHosting;
+			};
+			buildConfigurationList = 42FAC88516A72C3D002ED5DC /* Build configuration list for PBXProject "iswingmobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42FAC88016A72C3D002ED5DC;
+			productRefGroup = 42FAC88C16A72C3D002ED5DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42FAC88A16A72C3D002ED5DC /* iswingmobile */,
+				42FAC8B116A72C3E002ED5DC /* iswingmobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42FAC88916A72C3D002ED5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAC89A16A72C3E002ED5DC /* InfoPlist.strings in Resources */,
+				42FAC8A216A72C3E002ED5DC /* Default.png in Resources */,
+				42FAC8A416A72C3E002ED5DC /* Default@2x.png in Resources */,
+				42FAC8A616A72C3E002ED5DC /* Default-568h@2x.png in Resources */,
+				42FAC8A916A72C3E002ED5DC /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FAC8AF16A72C3E002ED5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAC8BE16A72C3E002ED5DC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42FAC8B016A72C3E002ED5DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42FAC88716A72C3D002ED5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAC89C16A72C3E002ED5DC /* main.m in Sources */,
+				42FAC8A016A72C3E002ED5DC /* AppDelegate.m in Sources */,
+				42FAC8AC16A72C3E002ED5DC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FAC8AD16A72C3E002ED5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAC8C116A72C3E002ED5DC /* iswingmobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42FAC8B816A72C3E002ED5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42FAC88A16A72C3D002ED5DC /* iswingmobile */;
+			targetProxy = 42FAC8B716A72C3E002ED5DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42FAC89816A72C3E002ED5DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42FAC89916A72C3E002ED5DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42FAC8A816A72C3E002ED5DC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		42FAC8BC16A72C3E002ED5DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42FAC8BD16A72C3E002ED5DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42FAC8C216A72C3E002ED5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42FAC8C316A72C3E002ED5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42FAC8C516A72C3E002ED5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
+				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42FAC8C616A72C3E002ED5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
+				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42FAC8C816A72C3E002ED5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iswingmobile.app/iswingmobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
+				INFOPLIST_FILE = "iswingmobileTests/iswingmobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		42FAC8C916A72C3E002ED5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iswingmobile.app/iswingmobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
+				INFOPLIST_FILE = "iswingmobileTests/iswingmobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42FAC88516A72C3D002ED5DC /* Build configuration list for PBXProject "iswingmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FAC8C216A72C3E002ED5DC /* Debug */,
+				42FAC8C316A72C3E002ED5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FAC8C416A72C3E002ED5DC /* Build configuration list for PBXNativeTarget "iswingmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FAC8C516A72C3E002ED5DC /* Debug */,
+				42FAC8C616A72C3E002ED5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42FAC8C716A72C3E002ED5DC /* Build configuration list for PBXNativeTarget "iswingmobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FAC8C816A72C3E002ED5DC /* Debug */,
+				42FAC8C916A72C3E002ED5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42FAC88216A72C3D002ED5DC /* Project object */;
+}
