@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface iswingmobileTests : SenTestCase
+@interface WebViewControllerTests : SenTestCase
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 DashBoardHosting. All rights reserved.
 //
 
-#import "iswingmobileTests.h"
+#import "WebViewControllerTests.h"
 
-@implementation iswingmobileTests
+@implementation WebViewControllerTests
 
 - (void)setUp
 {
@@ -19,14 +19,14 @@
 
 - (void)tearDown
 {
-    // Tear-down code here.
+    // TODO: Tear-down code here.
     
     [super tearDown];
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in iswingmobileTests");
+//    FIXME: STFail(@"Unit tests are not implemented yet in iswingmobileTests");
 }
 
 @end

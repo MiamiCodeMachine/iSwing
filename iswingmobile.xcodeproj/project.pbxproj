@@ -17,12 +17,12 @@
 		42FAC8A416A72C3E002ED5DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A316A72C3E002ED5DC /* Default@2x.png */; };
 		42FAC8A616A72C3E002ED5DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */; };
 		42FAC8A916A72C3E002ED5DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */; };
-		42FAC8AC16A72C3E002ED5DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8AB16A72C3E002ED5DC /* ViewController.m */; };
+		42FAC8AC16A72C3E002ED5DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8AB16A72C3E002ED5DC /* WebViewController.m */; };
 		42FAC8B416A72C3E002ED5DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC8B316A72C3E002ED5DC /* SenTestingKit.framework */; };
 		42FAC8B516A72C3E002ED5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC88F16A72C3D002ED5DC /* UIKit.framework */; };
 		42FAC8B616A72C3E002ED5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC89116A72C3E002ED5DC /* Foundation.framework */; };
 		42FAC8BE16A72C3E002ED5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8BC16A72C3E002ED5DC /* InfoPlist.strings */; };
-		42FAC8C116A72C3E002ED5DC /* iswingmobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8C016A72C3E002ED5DC /* iswingmobileTests.m */; };
+		42FAC8C116A72C3E002ED5DC /* WebViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8C016A72C3E002ED5DC /* WebViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42FAC88B16A72C3D002ED5DC /* iswingmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iswingmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FAC88B16A72C3D002ED5DC /* iSwing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSwing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAC88F16A72C3D002ED5DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42FAC89116A72C3E002ED5DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42FAC89316A72C3E002ED5DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,14 +50,14 @@
 		42FAC8A316A72C3E002ED5DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		42FAC8A816A72C3E002ED5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		42FAC8AA16A72C3E002ED5DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		42FAC8AB16A72C3E002ED5DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42FAC8AA16A72C3E002ED5DC /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		42FAC8AB16A72C3E002ED5DC /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		42FAC8B216A72C3E002ED5DC /* iswingmobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iswingmobileTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAC8B316A72C3E002ED5DC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		42FAC8BB16A72C3E002ED5DC /* iswingmobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iswingmobileTests-Info.plist"; sourceTree = "<group>"; };
 		42FAC8BD16A72C3E002ED5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		42FAC8BF16A72C3E002ED5DC /* iswingmobileTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iswingmobileTests.h; sourceTree = "<group>"; };
-		42FAC8C016A72C3E002ED5DC /* iswingmobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iswingmobileTests.m; sourceTree = "<group>"; };
+		42FAC8BF16A72C3E002ED5DC /* WebViewControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewControllerTests.h; sourceTree = "<group>"; };
+		42FAC8C016A72C3E002ED5DC /* WebViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		42FAC88C16A72C3D002ED5DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42FAC88B16A72C3D002ED5DC /* iswingmobile.app */,
+				42FAC88B16A72C3D002ED5DC /* iSwing.app */,
 				42FAC8B216A72C3E002ED5DC /* iswingmobileTests.octest */,
 			);
 			name = Products;
@@ -120,8 +120,8 @@
 				42FAC89E16A72C3E002ED5DC /* AppDelegate.h */,
 				42FAC89F16A72C3E002ED5DC /* AppDelegate.m */,
 				42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */,
-				42FAC8AA16A72C3E002ED5DC /* ViewController.h */,
-				42FAC8AB16A72C3E002ED5DC /* ViewController.m */,
+				42FAC8AA16A72C3E002ED5DC /* WebViewController.h */,
+				42FAC8AB16A72C3E002ED5DC /* WebViewController.m */,
 				42FAC89616A72C3E002ED5DC /* Supporting Files */,
 			);
 			path = iswingmobile;
@@ -144,8 +144,8 @@
 		42FAC8B916A72C3E002ED5DC /* iswingmobileTests */ = {
 			isa = PBXGroup;
 			children = (
-				42FAC8BF16A72C3E002ED5DC /* iswingmobileTests.h */,
-				42FAC8C016A72C3E002ED5DC /* iswingmobileTests.m */,
+				42FAC8BF16A72C3E002ED5DC /* WebViewControllerTests.h */,
+				42FAC8C016A72C3E002ED5DC /* WebViewControllerTests.m */,
 				42FAC8BA16A72C3E002ED5DC /* Supporting Files */,
 			);
 			path = iswingmobileTests;
@@ -177,7 +177,7 @@
 			);
 			name = iswingmobile;
 			productName = iswingmobile;
-			productReference = 42FAC88B16A72C3D002ED5DC /* iswingmobile.app */;
+			productReference = 42FAC88B16A72C3D002ED5DC /* iSwing.app */;
 			productType = "com.apple.product-type.application";
 		};
 		42FAC8B116A72C3E002ED5DC /* iswingmobileTests */ = {
@@ -272,7 +272,7 @@
 			files = (
 				42FAC89C16A72C3E002ED5DC /* main.m in Sources */,
 				42FAC8A016A72C3E002ED5DC /* AppDelegate.m in Sources */,
-				42FAC8AC16A72C3E002ED5DC /* ViewController.m in Sources */,
+				42FAC8AC16A72C3E002ED5DC /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42FAC8C116A72C3E002ED5DC /* iswingmobileTests.m in Sources */,
+				42FAC8C116A72C3E002ED5DC /* WebViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +378,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
 				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSwing;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,7 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
 				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSwing;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
