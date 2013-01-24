@@ -29,4 +29,10 @@
 //    FIXME: STFail(@"Unit tests are not implemented yet in iswingmobileTests");
 }
 
+-(void)testString
+{
+    int i = 3 + 3;
+    STAssertTrue(i == 7,@"This should equal 6");
+}
+
 @end

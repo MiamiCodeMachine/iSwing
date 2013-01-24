@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4204269716A98E5E00AF16FE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4204269616A98E5E00AF16FE /* CoreLocation.framework */; };
+		4268195E16B1840A0060DF29 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268195A16B1840A0060DF29 /* libTestFlight.a */; };
+		4268195F16B1840A0060DF29 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4268195B16B1840A0060DF29 /* README.md */; };
+		4268196016B1840A0060DF29 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 4268195C16B1840A0060DF29 /* release_notes.md */; };
+		4268196316B1847C0060DF29 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268196216B1847C0060DF29 /* libz.dylib */; };
+		4268196416B18C940060DF29 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D425AA16AF2560003CC531 /* Default-568h@2x.png */; };
+		4268196716B1C0820060DF29 /* SwingArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268196616B1C0820060DF29 /* SwingArchiver.m */; };
+		4268196816B1C0820060DF29 /* SwingArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268196616B1C0820060DF29 /* SwingArchiver.m */; };
+		42D425B416AF2627003CC531 /* appIcon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D425B316AF2627003CC531 /* appIcon57.png */; };
+		42D425B616AF2641003CC531 /* appIcon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D425B516AF2641003CC531 /* appIcon57@2x.png */; };
+		42F7A3C916AE3B620023F34F /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3BE16AE3B620023F34F /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42F7A3CA16AE3B620023F34F /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3BE16AE3B620023F34F /* NSObject+SBJSON.m */; };
+		42F7A3CB16AE3B620023F34F /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C016AE3B620023F34F /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42F7A3CC16AE3B620023F34F /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C016AE3B620023F34F /* NSString+SBJSON.m */; };
+		42F7A3CD16AE3B620023F34F /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C216AE3B620023F34F /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42F7A3CE16AE3B620023F34F /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C216AE3B620023F34F /* SBJSON.m */; };
+		42F7A3CF16AE3B620023F34F /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C416AE3B620023F34F /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42F7A3D016AE3B620023F34F /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C416AE3B620023F34F /* SBJsonBase.m */; };
+		42F7A3D116AE3B620023F34F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C616AE3B620023F34F /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42F7A3D216AE3B620023F34F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C616AE3B620023F34F /* SBJsonParser.m */; };
+		42F7A3D316AE3B620023F34F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C816AE3B620023F34F /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42F7A3D416AE3B620023F34F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7A3C816AE3B620023F34F /* SBJsonWriter.m */; };
+		42F7A3E516AF1C210023F34F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F7A3E416AF1C210023F34F /* Default.png */; };
+		42F7A3E716AF1D000023F34F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F7A3E616AF1D000023F34F /* Default@2x.png */; };
 		42FAC89016A72C3E002ED5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC88F16A72C3D002ED5DC /* UIKit.framework */; };
 		42FAC89216A72C3E002ED5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC89116A72C3E002ED5DC /* Foundation.framework */; };
 		42FAC89416A72C3E002ED5DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC89316A72C3E002ED5DC /* CoreGraphics.framework */; };
 		42FAC89A16A72C3E002ED5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC89816A72C3E002ED5DC /* InfoPlist.strings */; };
 		42FAC89C16A72C3E002ED5DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC89B16A72C3E002ED5DC /* main.m */; };
 		42FAC8A016A72C3E002ED5DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC89F16A72C3E002ED5DC /* AppDelegate.m */; };
-		42FAC8A216A72C3E002ED5DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A116A72C3E002ED5DC /* Default.png */; };
-		42FAC8A416A72C3E002ED5DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A316A72C3E002ED5DC /* Default@2x.png */; };
-		42FAC8A616A72C3E002ED5DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */; };
 		42FAC8A916A72C3E002ED5DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */; };
 		42FAC8AC16A72C3E002ED5DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAC8AB16A72C3E002ED5DC /* WebViewController.m */; };
 		42FAC8B416A72C3E002ED5DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAC8B316A72C3E002ED5DC /* SenTestingKit.framework */; };
@@ -36,6 +57,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4204269616A98E5E00AF16FE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4268195A16B1840A0060DF29 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		4268195B16B1840A0060DF29 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4268195C16B1840A0060DF29 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		4268195D16B1840A0060DF29 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		4268196216B1847C0060DF29 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4268196516B1C0820060DF29 /* SwingArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwingArchiver.h; sourceTree = "<group>"; };
+		4268196616B1C0820060DF29 /* SwingArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwingArchiver.m; sourceTree = "<group>"; };
+		42D425AA16AF2560003CC531 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		42D425B316AF2627003CC531 /* appIcon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appIcon57.png; path = ../appIcon57.png; sourceTree = "<group>"; };
+		42D425B516AF2641003CC531 /* appIcon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appIcon57@2x.png"; path = "../appIcon57@2x.png"; sourceTree = "<group>"; };
+		42F7A3BC16AE3B620023F34F /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		42F7A3BD16AE3B620023F34F /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		42F7A3BE16AE3B620023F34F /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		42F7A3BF16AE3B620023F34F /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		42F7A3C016AE3B620023F34F /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		42F7A3C116AE3B620023F34F /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		42F7A3C216AE3B620023F34F /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		42F7A3C316AE3B620023F34F /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		42F7A3C416AE3B620023F34F /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		42F7A3C516AE3B620023F34F /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		42F7A3C616AE3B620023F34F /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		42F7A3C716AE3B620023F34F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		42F7A3C816AE3B620023F34F /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		42F7A3E416AF1C210023F34F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		42F7A3E616AF1D000023F34F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		42FAC88B16A72C3D002ED5DC /* iSwing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSwing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAC88F16A72C3D002ED5DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42FAC89116A72C3E002ED5DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,9 +93,6 @@
 		42FAC89D16A72C3E002ED5DC /* iswingmobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iswingmobile-Prefix.pch"; sourceTree = "<group>"; };
 		42FAC89E16A72C3E002ED5DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42FAC89F16A72C3E002ED5DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		42FAC8A116A72C3E002ED5DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		42FAC8A316A72C3E002ED5DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		42FAC8A816A72C3E002ED5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		42FAC8AA16A72C3E002ED5DC /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		42FAC8AB16A72C3E002ED5DC /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -65,9 +109,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4268196316B1847C0060DF29 /* libz.dylib in Frameworks */,
+				4204269716A98E5E00AF16FE /* CoreLocation.framework in Frameworks */,
 				42FAC89016A72C3E002ED5DC /* UIKit.framework in Frameworks */,
 				42FAC89216A72C3E002ED5DC /* Foundation.framework in Frameworks */,
 				42FAC89416A72C3E002ED5DC /* CoreGraphics.framework in Frameworks */,
+				4268195E16B1840A0060DF29 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +131,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4268195916B1840A0060DF29 /* TestFlightSDK1 */ = {
+			isa = PBXGroup;
+			children = (
+				4268195A16B1840A0060DF29 /* libTestFlight.a */,
+				4268195B16B1840A0060DF29 /* README.md */,
+				4268195C16B1840A0060DF29 /* release_notes.md */,
+				4268195D16B1840A0060DF29 /* TestFlight.h */,
+			);
+			path = TestFlightSDK1;
+			sourceTree = "<group>";
+		};
+		42D425AD16AF258B003CC531 /* Launch Image */ = {
+			isa = PBXGroup;
+			children = (
+				42F7A3E416AF1C210023F34F /* Default.png */,
+				42F7A3E616AF1D000023F34F /* Default@2x.png */,
+			);
+			name = "Launch Image";
+			sourceTree = "<group>";
+		};
+		42D425AE16AF25D2003CC531 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				42D425B516AF2641003CC531 /* appIcon57@2x.png */,
+				42D425B316AF2627003CC531 /* appIcon57.png */,
+			);
+			name = "App Icons";
+			sourceTree = "<group>";
+		};
+		42F7A3BA16AE3B420023F34F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				42F7A3BC16AE3B620023F34F /* JSON.h */,
+				42F7A3BD16AE3B620023F34F /* NSObject+SBJSON.h */,
+				42F7A3BE16AE3B620023F34F /* NSObject+SBJSON.m */,
+				42F7A3BF16AE3B620023F34F /* NSString+SBJSON.h */,
+				42F7A3C016AE3B620023F34F /* NSString+SBJSON.m */,
+				42F7A3C116AE3B620023F34F /* SBJSON.h */,
+				42F7A3C216AE3B620023F34F /* SBJSON.m */,
+				42F7A3C316AE3B620023F34F /* SBJsonBase.h */,
+				42F7A3C416AE3B620023F34F /* SBJsonBase.m */,
+				42F7A3C516AE3B620023F34F /* SBJsonParser.h */,
+				42F7A3C616AE3B620023F34F /* SBJsonParser.m */,
+				42F7A3C716AE3B620023F34F /* SBJsonWriter.h */,
+				42F7A3C816AE3B620023F34F /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		42F7A3DA16AF1B920023F34F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				42D425AE16AF25D2003CC531 /* App Icons */,
+				42D425AD16AF258B003CC531 /* Launch Image */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		42FAC88016A72C3D002ED5DC = {
 			isa = PBXGroup;
 			children = (
+				4268195916B1840A0060DF29 /* TestFlightSDK1 */,
 				42FAC89516A72C3E002ED5DC /* iswingmobile */,
 				42FAC8B916A72C3E002ED5DC /* iswingmobileTests */,
 				42FAC88E16A72C3D002ED5DC /* Frameworks */,
@@ -106,6 +212,7 @@
 		42FAC88E16A72C3D002ED5DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4204269616A98E5E00AF16FE /* CoreLocation.framework */,
 				42FAC88F16A72C3D002ED5DC /* UIKit.framework */,
 				42FAC89116A72C3E002ED5DC /* Foundation.framework */,
 				42FAC89316A72C3E002ED5DC /* CoreGraphics.framework */,
@@ -117,12 +224,16 @@
 		42FAC89516A72C3E002ED5DC /* iswingmobile */ = {
 			isa = PBXGroup;
 			children = (
+				42F7A3BA16AE3B420023F34F /* JSON */,
+				42F7A3DA16AF1B920023F34F /* images */,
 				42FAC89E16A72C3E002ED5DC /* AppDelegate.h */,
 				42FAC89F16A72C3E002ED5DC /* AppDelegate.m */,
 				42FAC8A716A72C3E002ED5DC /* MainStoryboard.storyboard */,
 				42FAC8AA16A72C3E002ED5DC /* WebViewController.h */,
 				42FAC8AB16A72C3E002ED5DC /* WebViewController.m */,
 				42FAC89616A72C3E002ED5DC /* Supporting Files */,
+				4268196516B1C0820060DF29 /* SwingArchiver.h */,
+				4268196616B1C0820060DF29 /* SwingArchiver.m */,
 			);
 			path = iswingmobile;
 			sourceTree = "<group>";
@@ -130,13 +241,11 @@
 		42FAC89616A72C3E002ED5DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42D425AA16AF2560003CC531 /* Default-568h@2x.png */,
 				42FAC89716A72C3E002ED5DC /* iswingmobile-Info.plist */,
 				42FAC89816A72C3E002ED5DC /* InfoPlist.strings */,
 				42FAC89B16A72C3E002ED5DC /* main.m */,
 				42FAC89D16A72C3E002ED5DC /* iswingmobile-Prefix.pch */,
-				42FAC8A116A72C3E002ED5DC /* Default.png */,
-				42FAC8A316A72C3E002ED5DC /* Default@2x.png */,
-				42FAC8A516A72C3E002ED5DC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +263,7 @@
 		42FAC8BA16A72C3E002ED5DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4268196216B1847C0060DF29 /* libz.dylib */,
 				42FAC8BB16A72C3E002ED5DC /* iswingmobileTests-Info.plist */,
 				42FAC8BC16A72C3E002ED5DC /* InfoPlist.strings */,
 			);
@@ -232,10 +342,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FAC89A16A72C3E002ED5DC /* InfoPlist.strings in Resources */,
-				42FAC8A216A72C3E002ED5DC /* Default.png in Resources */,
-				42FAC8A416A72C3E002ED5DC /* Default@2x.png in Resources */,
-				42FAC8A616A72C3E002ED5DC /* Default-568h@2x.png in Resources */,
 				42FAC8A916A72C3E002ED5DC /* MainStoryboard.storyboard in Resources */,
+				42F7A3E516AF1C210023F34F /* Default.png in Resources */,
+				42F7A3E716AF1D000023F34F /* Default@2x.png in Resources */,
+				42D425B416AF2627003CC531 /* appIcon57.png in Resources */,
+				42D425B616AF2641003CC531 /* appIcon57@2x.png in Resources */,
+				4268195F16B1840A0060DF29 /* README.md in Resources */,
+				4268196016B1840A0060DF29 /* release_notes.md in Resources */,
+				4268196416B18C940060DF29 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +387,13 @@
 				42FAC89C16A72C3E002ED5DC /* main.m in Sources */,
 				42FAC8A016A72C3E002ED5DC /* AppDelegate.m in Sources */,
 				42FAC8AC16A72C3E002ED5DC /* WebViewController.m in Sources */,
+				42F7A3C916AE3B620023F34F /* NSObject+SBJSON.m in Sources */,
+				42F7A3CB16AE3B620023F34F /* NSString+SBJSON.m in Sources */,
+				42F7A3CD16AE3B620023F34F /* SBJSON.m in Sources */,
+				42F7A3CF16AE3B620023F34F /* SBJsonBase.m in Sources */,
+				42F7A3D116AE3B620023F34F /* SBJsonParser.m in Sources */,
+				42F7A3D316AE3B620023F34F /* SBJsonWriter.m in Sources */,
+				4268196716B1C0820060DF29 /* SwingArchiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +402,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FAC8C116A72C3E002ED5DC /* WebViewControllerTests.m in Sources */,
+				42F7A3CA16AE3B620023F34F /* NSObject+SBJSON.m in Sources */,
+				42F7A3CC16AE3B620023F34F /* NSString+SBJSON.m in Sources */,
+				42F7A3CE16AE3B620023F34F /* SBJSON.m in Sources */,
+				42F7A3D016AE3B620023F34F /* SBJsonBase.m in Sources */,
+				42F7A3D216AE3B620023F34F /* SBJsonParser.m in Sources */,
+				42F7A3D416AE3B620023F34F /* SBJsonWriter.m in Sources */,
+				4268196816B1C0820060DF29 /* SwingArchiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +450,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		42D425B716B03E0D003CC531 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DashBoardHosting, Inc.";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "302C46DC-A5DC-4C43-951C-70DA6B2D4753";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		42D425B816B03E0D003CC531 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
+				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1\"",
+				);
+				PRODUCT_NAME = iSwing;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		42D425B916B03E0D003CC531 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iswingmobile.app/iswingmobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
+				INFOPLIST_FILE = "iswingmobileTests/iswingmobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
 		42FAC8C216A72C3E002ED5DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,9 +530,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -360,14 +547,15 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -378,6 +566,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
 				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1\"",
+				);
 				PRODUCT_NAME = iSwing;
 				WRAPPER_EXTENSION = app;
 			};
@@ -386,10 +578,16 @@
 		42FAC8C616A72C3E002ED5DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iswingmobile/iswingmobile-Prefix.pch";
 				INFOPLIST_FILE = "iswingmobile/iswingmobile-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1\"",
+				);
 				PRODUCT_NAME = iSwing;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -436,6 +634,7 @@
 			buildConfigurations = (
 				42FAC8C216A72C3E002ED5DC /* Debug */,
 				42FAC8C316A72C3E002ED5DC /* Release */,
+				42D425B716B03E0D003CC531 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -445,16 +644,20 @@
 			buildConfigurations = (
 				42FAC8C516A72C3E002ED5DC /* Debug */,
 				42FAC8C616A72C3E002ED5DC /* Release */,
+				42D425B816B03E0D003CC531 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42FAC8C716A72C3E002ED5DC /* Build configuration list for PBXNativeTarget "iswingmobileTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42FAC8C816A72C3E002ED5DC /* Debug */,
 				42FAC8C916A72C3E002ED5DC /* Release */,
+				42D425B916B03E0D003CC531 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
