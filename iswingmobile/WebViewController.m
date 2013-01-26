@@ -9,7 +9,9 @@
 
 #import "WebViewController.h"
 
-static NSString *const kUrlAddress = @"http://12.190.217.5/ios/homepage.cfm";
+static NSString *const kUrlAddress = @"http://www.theiswingapp.com/ios/homepage.cfm";
+
+//static NSString *const kUrlAddress = @"http://12.190.217.5/ios/homepage.cfm";
 //static NSString *const kUrlAddress = @"http://localhost/dashboardhosting/iostest.html";
 
 
@@ -138,11 +140,11 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    NSHTTPCookie *cookie;
-    NSHTTPCookieStorage *cookieJar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-    for (cookie in [cookieJar cookies]) {
-        NSLog(@"%@", cookie);
-    }
+//    NSHTTPCookie *cookie;
+//    NSHTTPCookieStorage *cookieJar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+//    for (cookie in [cookieJar cookies]) {
+//        NSLog(@"%@", cookie);
+//    }
 
 
 }
@@ -175,7 +177,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         swingIdString = [self generateUUID];
         [[NSUserDefaults standardUserDefaults] setObject:swingIdString forKey:@"swingId"];
     }
-    NSLog(@"Swing Id : %@\n\n",swingIdString);
     [self.parametersList setObject:swingIdString forKey:@"sku"];
 
     // Get Coordinates
@@ -299,6 +300,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     self.parametersList = [[NSMutableDictionary alloc] init];
     self.json = [[SBJSON alloc]init];
     [TestFlight passCheckpoint:@"CHECKPOINT_ViewDidLoad"];
+
 
 }
 -(void)viewWillDisappear:(BOOL)animated

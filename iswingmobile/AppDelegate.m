@@ -23,6 +23,7 @@
 #endif
     [TestFlight takeOff:@"175033864a4653e44b84713ef0375852_MTc4NjM3MjAxMy0wMS0yNCAxMDowNTozOC45Nzc2NTE"];
     [TestFlight passCheckpoint:@"CHECKPOINT_AppDidLaunch"];
+    [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
     return YES;
 }
 							
