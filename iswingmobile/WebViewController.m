@@ -17,6 +17,7 @@ static NSString *const kUrlAddress = @"http://www.theiswingapp.com/ios/homepage.
 
 @interface WebViewController ()
 -(void)getCoordinates;
+-(void)prepareURLLoading;
 -(void)loadWebPage;
 -(NSString*)generateUUID;
 
@@ -135,7 +136,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 #pragma mark - Web View delegate mehods
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
-    
+   NSLog(@"%s", __FUNCTION__);
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
@@ -148,60 +149,25 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 
 }
+#pragma mark - CLLocation Delegate Methods
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     
 }
-#pragma mark - CLLocation Delegate Methods
+
+// iOS 5
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    CLLocation *location = newLocation;
+    self.currentLocation = location;
+    [self prepareURLLoading];
+}
+// iOS 6
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *lastLocation = [locations lastObject];
     self.currentLocation = lastLocation;
-    NSDate *eventDate = lastLocation.timestamp;
-    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    if (abs(howRecent) < 15.0) {
-        if (lastLocation.horizontalAccuracy < 35.0) {
-            NSLog(@"latitude %+.6f, longitude %+.6f\n",
-                  lastLocation.coordinate.latitude,
-                  lastLocation.coordinate.longitude);
-            NSLog(@"Horizontal Accuracy:%f", lastLocation.horizontalAccuracy);
-            
-            //Optional: turn off location services once we've gotten a good location
-            [self.locationManager stopUpdatingLocation];
-        }
-    }
-
-    // Get unique device identifier
-    NSString *swingIdString = [[NSUserDefaults standardUserDefaults] objectForKey:@"swingId"];
-    if (swingIdString == nil) {
-        swingIdString = [self generateUUID];
-        [[NSUserDefaults standardUserDefaults] setObject:swingIdString forKey:@"swingId"];
-    }
-    [self.parametersList setObject:swingIdString forKey:@"sku"];
-
-    // Get Coordinates
-    CLLocationCoordinate2D coord;
-    coord = [self.currentLocation coordinate];
-    NSString *currentLatitude = [NSString stringWithFormat:@"%f",
-                                 coord.latitude];
-    NSString *currentLongitude = [NSString stringWithFormat:@"%f",
-                                 coord.longitude];
-    NSString *GPSString = [NSString stringWithFormat:@"%@__%@",currentLatitude, currentLongitude];
-    [self.parametersList setObject:GPSString forKey:@"gps"];
-    
-    // Get screen size
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    NSString *screenHeight = [NSString stringWithFormat:@"%d",
-                              (int)screenSize.height];
-    NSString *screenWidth = [NSString stringWithFormat:@"%d",
-                              (int)screenSize.width];
-    [self.parametersList setObject:screenHeight forKey:@"pixwidth"];
-    [self.parametersList setObject:screenWidth forKey:@"pixheight"];
-    
-//    [self.parametersList enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-//        NSLog(@"Key: %@ Object : %@ ", key, obj);
-//    }];
-    [self loadWebPage];
+    [self prepareURLLoading];
 
 }
 
@@ -236,6 +202,56 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     [self.locationManager startUpdatingLocation];
     
 }
+-(void)prepareURLLoading
+{
+    if (!self.currentLocation) return;
+    CLLocation *lastLocation = self.currentLocation;
+    
+    NSDate *eventDate = lastLocation.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    if (abs(howRecent) < 15.0) {
+        if (lastLocation.horizontalAccuracy < 35.0) {
+            NSLog(@"latitude %+.6f, longitude %+.6f\n",
+                  lastLocation.coordinate.latitude,
+                  lastLocation.coordinate.longitude);
+            NSLog(@"Horizontal Accuracy:%f", lastLocation.horizontalAccuracy);
+            
+            //Optional: turn off location services once we've gotten a good location
+            [self.locationManager stopUpdatingLocation];
+        }
+    }
+    
+    // Get unique device identifier
+    NSString *swingIdString = [[NSUserDefaults standardUserDefaults] objectForKey:@"swingId"];
+    if (swingIdString == nil) {
+        swingIdString = [self generateUUID];
+        [[NSUserDefaults standardUserDefaults] setObject:swingIdString forKey:@"swingId"];
+    }
+    [self.parametersList setObject:swingIdString forKey:@"sku"];
+    
+    // Get Coordinates
+    CLLocationCoordinate2D coord;
+    coord = [lastLocation coordinate];
+    NSString *currentLatitude = [NSString stringWithFormat:@"%f",
+                                 coord.latitude];
+    NSString *currentLongitude = [NSString stringWithFormat:@"%f",
+                                  coord.longitude];
+    NSString *GPSString = [NSString stringWithFormat:@"%@__%@",currentLatitude, currentLongitude];
+    [self.parametersList setObject:GPSString forKey:@"gps"];
+    
+    // Get screen size
+    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+    NSString *screenHeight = [NSString stringWithFormat:@"%d",
+                              (int)screenSize.height];
+    NSString *screenWidth = [NSString stringWithFormat:@"%d",
+                             (int)screenSize.width];
+    [self.parametersList setObject:screenHeight forKey:@"pixwidth"];
+    [self.parametersList setObject:screenWidth forKey:@"pixheight"];
+    
+    [self loadWebPage];
+    
+}
+
 -(void)loadWebPage
 {
     self.urlAddress = [NSString stringWithFormat:@"%@?", kUrlAddress];

@@ -14,6 +14,9 @@
 
 @implementation AppDelegate
 
+#define MEASURE_LAUNCH_TIME 1
+extern CFAbsoluteTime StartTime;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -24,6 +27,12 @@
     [TestFlight takeOff:@"175033864a4653e44b84713ef0375852_MTc4NjM3MjAxMy0wMS0yNCAxMDowNTozOC45Nzc2NTE"];
     [TestFlight passCheckpoint:@"CHECKPOINT_AppDidLaunch"];
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
+    
+#if MEASURE_LAUNCH_TIME
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Launched in %f sec", CFAbsoluteTimeGetCurrent() - StartTime);
+    });
+#endif
     return YES;
 }
 							
