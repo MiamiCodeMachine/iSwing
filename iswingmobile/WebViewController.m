@@ -152,7 +152,16 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 #pragma mark - CLLocation Delegate Methods
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    
+    if (error.code ==  kCLErrorDenied) {
+        NSLog(@"Location manager denied access - kCLErrorDenied");
+        
+        UIAlertView *alert =
+        [[UIAlertView alloc] initWithTitle:@"Location issue"
+                                   message:@"Your location cannot be determined."
+                                  delegate:self
+                         cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 // iOS 5
@@ -196,6 +205,14 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     
     if (![CLLocationManager locationServicesEnabled]) {
         NSLog(@"*** Error with locationServicesEnabled");
+        NSString *errorMessage = @"Please enable location services";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Cannot Show iSwing App"
+                                                            message:errorMessage
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+        
         return;
     }
 
