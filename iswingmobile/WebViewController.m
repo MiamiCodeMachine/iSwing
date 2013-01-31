@@ -136,22 +136,16 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 #pragma mark - Web View delegate mehods
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
-   NSLog(@"%s", __FUNCTION__);
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-//    NSHTTPCookie *cookie;
-//    NSHTTPCookieStorage *cookieJar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-//    for (cookie in [cookieJar cookies]) {
-//        NSLog(@"%@", cookie);
-//    }
-
-
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
-#pragma mark - CLLocation Delegate Methods
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     if (error.code ==  kCLErrorDenied) {
         NSLog(@"Location manager denied access - kCLErrorDenied");
         
@@ -163,6 +157,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         [alert show];
     }
 }
+#pragma mark - CLLocation Delegate Methods
 
 // iOS 5
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
@@ -347,5 +342,13 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    // Return YES if incoming orientation is Portrait
+    // or either of the landscaoes, otherwise return NO
+    return ((toInterfaceOrientation == UIInterfaceOrientationPortrait)
+            || UIInterfaceOrientationIsLandscape(toInterfaceOrientation));
 }
 @end
