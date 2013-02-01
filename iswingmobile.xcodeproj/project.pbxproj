@@ -192,10 +192,10 @@
 		42FAC88016A72C3D002ED5DC = {
 			isa = PBXGroup;
 			children = (
-				4268195916B1840A0060DF29 /* TestFlightSDK1 */,
 				42FAC89516A72C3E002ED5DC /* iswingmobile */,
 				42FAC8B916A72C3E002ED5DC /* iswingmobileTests */,
 				42FAC88E16A72C3D002ED5DC /* Frameworks */,
+				4268195916B1840A0060DF29 /* TestFlightSDK1 */,
 				42FAC88C16A72C3D002ED5DC /* Products */,
 			);
 			sourceTree = "<group>";
